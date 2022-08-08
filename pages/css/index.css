@@ -13,6 +13,24 @@ body {
 }
 
 /* styling for head */
+.redi-btn .btnn:hover{
+    box-shadow: 2px 5px 1px rgba(0, 0, 0, 0.507);
+}
+.redi-btn .btnn{
+    cursor: pointer;
+    font-size: 4rem;
+    /* text-align: center; */
+    margin-top: 10%;
+    margin-inline: auto;
+    background-color: rebeccapurple;
+    color: wheat;
+    width: 25rem;
+    height: 15rem;
+    position: relative;
+}
+.hide-it{
+    display: none;
+}
 .head::before {
     background: url("head-bag.webp");
     background-size: 100%;

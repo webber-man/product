@@ -1,0 +1,73 @@
+:root{
+    --basecolor1 : #FF6D00;
+    --basecolor2 : #FF9201;
+    --basecolor3 : #FFAB41;
+    --basecolor4 : #FFD181;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior:smooth;
+}
+html {
+    /* all: unset; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    background-image: url("/pages/images/season-bag.jpg");
+    /* background-color: var(--basecolor4); */
+    max-width: 100vw;
+    overflow: scroll;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.back-btn{
+    color: black;
+    top:-8px;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.2em;
+}
+.sec-body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.438);
+    backdrop-filter: blur(1px);
+    border-radius: 30px;
+    margin: 5%;
+    padding: 5%;
+    width: 90vw;
+    height: 95vh;
+}
+.tile-block {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+    flex-direction: row;
+}
+.tiles{
+    left:50%;
+}
+.tiles, .tiles1 {
+    background-color: whitesmoke;
+    border: 2px solid rgba(192, 0, 0, 0.411);
+    position: absolute;
+    font-size: 0.8em;
+    padding: 2%;
+    overflow-y: scroll;
+    border-radius: 15px;
+    margin: 2%;
+    height: 25%;
+    width: 40%;
+}
+.tiles1{
+    font-size: 1.5em;
+    text-align: center;
+}
+.tile-block:hover .tiles , .tile-block:hover .tiles1{
+    transform: scale(1.05, 1.05);
+    box-shadow: 3px 2px rgba(255, 217, 0, 0.589);
+}
